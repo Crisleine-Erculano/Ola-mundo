@@ -44,3 +44,25 @@ h1, h2, h3 {
   font-weight: 700;
   line-height: 5rem;
 }
+.navegacao {
+   height: 112px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 3rem;
+}
+
+.link {
+   font-size: 1.25rem;
+   line-height: 1.5rem;
+   color: var(--cor-fonte-principal);
+}
+.linkDestacado{
+   text-decoration: underline;
+}
+
+@media (max-width: 744px) {
+   .navegacao {
+       height: 72px;
+   }
+}
