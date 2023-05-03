@@ -5,6 +5,7 @@ import SobreMim from "./Paginas/inicio/SobreMim";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PaginaPadrao from "Componentes/PaginaPadrao";
 import Post from "Componentes/Post";
+import NaoEncontrada from "Paginas/NaoEncontrada";
 
 function AppRoutes() {
   return (
@@ -14,8 +15,9 @@ function AppRoutes() {
         <Route path="/" element={<PaginaPadrao />}>
           <Route path="/" element={<Inicio />} />
           <Route path="/SobreMim" element={<SobreMim />} />
-          <Route path="post/:id" element= {<Post/>} />
+          <Route path="post/:id" element= {<Post />} />
         </Route>
+          <Route path="*" element={<NaoEncontrada />} />
 
       </Routes>
       <Rodape />
