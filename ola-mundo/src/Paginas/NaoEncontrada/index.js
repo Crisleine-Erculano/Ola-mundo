@@ -1,3 +1,4 @@
+import BotaoPrincipal from 'Componentes/BotaoPrincipal'
 import styles from './NaoEncontrada.module.css'
 import erro404 from 'assets/erro_404.png'
 
@@ -19,7 +20,7 @@ export default function NaoEncontrada() {
             </p>
 
             <div className={styles.botaoContainer}>
-               <button>Voltar</button>
+               <BotaoPrincipal tamanho="lg">Voltar</BotaoPrincipal>
             </div>
 
             <img className={styles.imagemCachorro}
