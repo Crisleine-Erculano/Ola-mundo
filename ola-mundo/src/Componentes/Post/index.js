@@ -21,7 +21,7 @@ export default function Post() {
          <Route path="*" element={<PaginaPadrao />}>
             <Route index element={
                <PostModelo
-                  fotocapa={`/assets/Post/${post.id}/capa.png`}
+                  fotoCapa={`/assets/Post/${post.id}/capa.png`}
                   titulo={post.titulo}
                >
                   <div className="post-markdown-container">
